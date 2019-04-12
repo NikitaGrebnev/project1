@@ -1,0 +1,91 @@
+.posters{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    &-container{
+    }
+    &__header{
+     font-size: 161.5%;
+     font-weight: 500;
+     line-height: 1.1;
+     margin-bottom: 5px;
+    }
+    &__entertainment{
+        margin-left: 1px;
+    }
+    &__entertainment-button{
+     line-height: 1.24;
+     display: inline-block;
+     margin: 8px 8px 0 0;
+     padding: 10px 16px;
+     cursor: pointer;
+     border-radius: 3px;
+     outline: none;
+     background: #e6e6e6;
+     text-decoration: none;
+     margin-bottom: 25px;
+    }
+    .posters-wrapper{
+        display: flex;
+        .poster-box{
+            width: 120px;
+            margin-right: 16px;
+            .poster__moovie{
+                display: block;
+                height: 180px;
+                background-image: url("https://avatars.mds.yandex.net/get-afishanew/21626/ab75e3544d8eee6ab0d15af20a0b2f13/240x360");
+                border-radius: 6px;
+                box-shadow: 0 6px 18px rgba(14,21,47,.1),0 -2px 6px rgba(14,21,47,.02);
+                cursor: pointer;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: cover;
+             }
+            .poster__title{
+                display: block;
+                padding-top: 8px;
+            }
+            .poster__movie-genre{
+                color: @grey;
+            } 
+        }
+    }
+    .white-cover{
+        width: 400px;
+        height: 240px;
+        background-color: white;
+        margin-bottom: -240px;
+        position: absolute;
+        top: 90px;
+        left: 900px;
+    }
+    .carousel-switcher-right{
+        position: absolute;
+        cursor: pointer;
+        top: 168px;
+        left: 900px-21px;
+        width: 44px;
+        height: 44px;
+        border-radius: 100%;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+        &::after{
+         position: absolute;
+         top: 15px;
+         left: 13px;
+         width: 100%;
+         height: 100%;
+         content: '';
+         
+         background: url(//yastatic.net/www/_/P/1/XsbDBNVRidYE69PG92QRS1Rq8.svg);
+         background-repeat: no-repeat;
+         
+        }
+    }  
+ }
+ ._black-background{
+     color: white;
+     background-color: #000;
+ }
+ 

@@ -1,0 +1,148 @@
+.nav{
+    position: absolute;
+    top: 26px;
+    left: 1311px;
+    ._third-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        color: @grey;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    &-block{
+        cursor: pointer;
+        width: 152px;
+        position: relative;
+        left: 8px;
+        padding-left: 12px;
+        padding-right: 13px;
+        border: 1px solid lighten(@grey, 50%);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,.1),0 2px 6px 0 rgba(0,0,0,.1);
+        border-radius: 3px;
+        margin-bottom: 10px;
+        &__mail{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 12px;
+            &-registration:visited{
+                color: @grey;
+            }
+        }
+        &__mail-log-in{
+            border-radius: 3px;
+            background-color: #e8e8e8;
+            font-size: 13px;
+            line-height: normal;
+            display: block;
+            margin-top: 18px;
+            padding: 7px 14px 8px;
+            width: 152px;
+            box-shadow: none;
+            outline: none;
+            border: none;
+        }
+        &__link{
+            display: inline-block;
+            width: 100%;
+            margin-top: 14px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #0080ff;
+        }
+        &__header{
+            padding-top: 11px;
+            color: @grey;
+            font-weight: 200px;
+        }
+        &__header-icon_number_one{
+            background: url(//yastatic.net/www/_/9/y/3ajwpDGMQAOuLCJKCU9rqFXQw.svg) no-repeat;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 8px;
+            left: 146px;
+        }
+        &__header-icon_number_two{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient x1='50%25' y1='17.8064%25' x2='52.2844%25' y2='49.6158%25' id='a'%3E%3Cstop stop-color='%23FF8B8B' offset='0%25'/%3E%3Cstop stop-color='%23F33' offset='100%25'/%3E%3C/linearGradient%3E%3ClinearGradient x1='66.5901%25' y1='54.2847%25' x2='36.2806%25' y2='97.8796%25' id='b'%3E%3Cstop stop-color='%23E30A0A' offset='0%25'/%3E%3Cstop stop-color='%23AE1313' offset='100%25'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M15.418.0841c.0072 0 .0214 14.4536.0214 14.4536a1.0509 1.0509 0 0 1-.2442-.0243 1.596 1.596 0 0 1-.1334-.0374L1.161 9.4844C.3861 9.178.2036 8.18.2036 7.3107c0-.8692.1825-1.8675.9582-2.1737L15.0625.1458s.0748-.0247.1335-.0374a1.0284 1.0284 0 0 1 .222-.0243z' fill='url(%23a)' transform='translate(2.8496 3.5)'/%3E%3Cpath d='M10.9396 18.6786c-2.1055 0-3.8124-1.7068-3.8124-3.8124 0-2.1055 1.7069-3.8123 3.8124-3.8123 2.1055 0 3.8124 1.7068 3.8124 3.8123 0 2.1056-1.7069 3.8124-3.8124 3.8124zm0-.7374c1.6983 0 3.075-1.3767 3.075-3.075 0-1.6982-1.3767-3.075-3.075-3.075-1.6983 0-3.075 1.3768-3.075 3.075 0 1.6983 1.3767 3.075 3.075 3.075z' fill='%23F33' fill-rule='nonzero'/%3E%3Cpath d='M12.7284 7.3111c0 3.9926 1.214 7.2296 2.711 7.2296 1.4955 0 2.711-3.2366 2.711-7.2296 0-3.993-1.214-7.227-2.711-7.227-1.497 0-2.711 3.2344-2.711 7.227z' fill='url(%23b)' transform='translate(2.8496 3.5)'/%3E%3C/g%3E%3C/svg%3E");
+            position: absolute;
+            top: 8px;
+            left: 146px;
+            width: 24px;
+            height: 24px;
+         
+        }
+        &__current-tvcontent{
+            display: flex;
+            margin-top: -3px;
+            &-logo{
+                position: relative;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                background-color: @grey;
+                margin-right: 4px;
+                &::before{
+                    position: absolute;
+                    top: 4px;
+                    left: 6px;
+                    content: '';
+                    border: 4px solid #999;
+                    border-right-width: 0;
+                    border-left: 6px solid #fff;
+                }
+            }
+            &-link{
+                font-size: 12px;
+                &:visited{
+                    color: #000;
+                }
+            }
+        }
+        &__current-chanel{
+            
+            margin-top: 9px;
+            color: @grey;
+            font-size: 12px;
+            margin-bottom: 15px;
+            position: relative;
+             
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                margin-right: 5px;
+                vertical-align: 17%;
+                background-color: #01de51;
+                border-radius: 50% 50%;     
+            }
+        }
+        &__local-news{
+            font-size: 12px;
+            margin-top: -8px;
+
+        }
+        &__user{
+            display: flex;
+            &-logo{
+                margin-top: -2px;
+            }
+            &-nickname{
+                padding-left: 4px;
+            }
+        }
+        &__message{
+            display: flex;
+            margin-top:-2px;
+            align-items: center;
+            &-icon{
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 2h10c1.1046 0 2 .8954 2 2v9.625a.5.5 0 0 1-.8.4L11.5 12H3c-1.1046 0-2-.8954-2-2V4c0-1.1046.8954-2 2-2z' fill='%23333' fill-rule='evenodd'/%3E%3C/svg%3E");
+                width: 16px;
+                height: 16px;
+                margin-right: 3px;
+                
+            }
+        }
+    }
+}

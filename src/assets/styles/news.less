@@ -1,0 +1,82 @@
+.news{
+    margin-left: 280px;
+    .news-header{
+        padding-left: 22px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        &__current{
+            color: @blue;
+            padding-right: 14px;
+
+        }
+        &__local{
+            color: lighten(@blue, 42%);
+            padding-right: 13px;
+        }
+        &__current-time{
+            color: @grey;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 84.6%;
+            white-space: nowrap;
+        }
+    }
+    &-content{
+        &-item{
+            display: flex;
+            align-items: center;
+            padding-bottom: 9px;
+            &__logo1{
+                width: 15px;
+                height: 16px;
+                background-image: url('//yastatic.net/s3/home/news/desktop/multicolor/lenta.svg');
+            }
+            &__logo2{
+                width: 15px;
+                height: 16px;
+                background-image: url('//yastatic.net/s3/home/news/desktop/multicolor/rt2.svg');
+            }
+            &__logo3{
+                width: 15px;
+                height: 16px;
+                background-image: url('//yastatic.net/s3/home/news/desktop/multicolor/gazetaru.svg');
+            }
+            &__logo4{
+                width: 15px;
+                height: 16px;
+                background-image: url('//yastatic.net/s3/home/news/desktop/multicolor/izvestiya.svg');
+            }
+            &__logo5{
+                width: 15px;
+                height: 16px;
+                background-image: url('//yastatic.net/s3/home/news/desktop/multicolor/ria.svg');
+            }
+            &__headline{
+                padding-left: 9px;
+                padding-top: 2px;
+            }
+        }
+
+    }
+    &-currency{
+        display: flex;
+        padding-left: 23px;
+        padding-top: 2px;
+        letter-spacing: 0.25px;
+        &__component{
+            display: flex;
+            padding-right: 10px;
+            &-name{
+                font-weight: 700;
+                text-transform: uppercase;
+                padding-right: 6px;
+            }
+            &-value{
+                padding-right: 7px;  
+            }
+            &-growth{
+                color: #069922;
+            }
+        }
+    }
+}
